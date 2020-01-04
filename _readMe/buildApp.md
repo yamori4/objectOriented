@@ -4,33 +4,57 @@
 
 
 
-1. GitHubのサイトから当アプリケーションのソースコードをダウンロードします。ここではzipファイルのダウンロードをしてみましょう。
+1. GitHubのページから当アプリケーションのソースコードをダウンロードします。ここではzipファイルのダウンロードをしてみましょう。GitHubページの「Clone or download」から「Download ZIP」をクリックします。
+
+   ![alt](./buildAppImg/downloadZip.jpg)
 
 2. ダウンロードしたzipファイルを解凍します。
 
-3. 「C:\xampp\htdocs」配下に解凍したファイルを配置します。
+3. 解凍したファイルは名前が「objectOriented-master」となっているので「objectOriented」に変更しておきましょう
 
-4. 構築自体は以上で完了なのですが、実際にウェブサービスとして稼働させて軽く動作確認をしてみましょう。「C:\xampp\xampp-control.exe」という実行ファイルをクリックしてXAMPPのControl Panelを起動します。
+4. 「C:\xampp\htdocs」配下に解凍したファイルを配置します。以下のようなディレクトリ構成になっていればOKです。
 
-5. Apacheを起動します。Apacheの「Start」ボタンをクリックしてください。
+   ```
+   C:
+   └xampp
+     └httocs
+       └objectOriented
+         ├─bridge
+         ├─composite
+         ├─decorator
+         ├─facade
+         ├─factoryMethod
+         ├─iterator
+         ├─observer
+         ├─singleton
+         ├─strategy
+         ├─templateMethod
+         ├─_books
+         ├─_common
+         └─_readMe
+   ```
+
+5. 構築自体は以上で完了なのですが、実際にウェブサービスとして稼働させて軽く動作確認をしてみましょう。「C:\xampp\xampp-control.exe」という実行ファイルをクリックしてXAMPPのControl Panelを起動します。
+
+6. Apacheを起動します。Apacheの「Start」ボタンをクリックしてください。
 
    ![alt](./buildAppImg/controlPanel.jpg)
 
    
 
-6. 起動できました。
+7. 起動できました。
 
    ![alt](./buildAppImg/wakeupApache.jpg)
 
-7. 任意のウェブブラウザを起動してください、ここではChromeを使用しています。アドレスバーに「https://localhost/objectOriented/index.php」もしくは「https://127.0.0.1/objectOriented/index.php」と入力してみてください。以下の画面が表示されます。XAMPPできちんとした設定をすればエラーは出なくなりますが、今回は接続先が自分のPC(localhost)であることをしっかりと確認したうえで接続します。Chromeの場合だと「詳細設定」ボタンをクリックしてから、「localhostにアクセスする」をクリックしてください。もしくは"https"ではなく"http"で接続しても構いません。
+8. 任意のウェブブラウザを起動してください、ここではChromeを使用しています。アドレスバーに「https://localhost/objectOriented/index.php」もしくは「https://127.0.0.1/objectOriented/index.php」と入力してみてください。以下の画面が表示されます。XAMPPできちんとした設定をすればエラーは出なくなりますが、今回は接続先が自分のPC(localhost)であることをしっかりと確認したうえで接続します。Chromeの場合だと「詳細設定」ボタンをクリックしてから、「localhostにアクセスする」をクリックしてください。もしくは"https"ではなく"http"で接続しても構いません。
 
    <img src="./buildAppImg/privacyError.jpg" width="380px"> <img src="./buildAppImg/accessLocalhost.jpg" width="380px">
 
-8. 以下の画面が表示されます、まだログインをしていませんので、「ログイン画面へ」リンクをクリックしてログイン画面へ遷移しましょう。
+9. 以下の画面が表示されます、まだログインをしていませんので、「ログイン画面へ」リンクをクリックしてログイン画面へ遷移しましょう。
 
    ![alt](./buildAppImg/notYetLogin.jpg)
 
-9. ログイン情報を入力します。当アプリケーションは学習用のサンプルですから、認証情報は「ログインID:user01、パスワード:123456」の固定値としており、すでに入力欄に自動で値を設定していますので、そのまま「ログイン」ボタンをクリックしてください。
+10. ログイン情報を入力します。当アプリケーションは学習用のサンプルですから、認証情報は「ログインID:user01、パスワード:123456」の固定値としており、すでに入力欄に自動で値を設定していますので、そのまま「ログイン」ボタンをクリックしてください。
 
    <small>※ちなみにここではデザインパターンのFacadeを用いて実装しています。</small>
 
@@ -38,26 +62,26 @@
 
    
 
-10. ログインが完了するとホーム画面が表示されます。画面上の各リンクをクリックするとそのデザインパターンを利用したページへと遷移する、という作りとなっています。
+11. ログインが完了するとホーム画面が表示されます。画面上の各リンクをクリックするとそのデザインパターンを利用したページへと遷移する、という作りとなっています。
 
     ![alt](./buildAppImg/ホーム画面.jpg)
+
     
-    
-    
+
     ## ディレクトリ構成
-    
+
     デザインパターンごとに別々に用意されたウェブページは、ソースコードのディレクトリ構造とも対応しています。(※Facadeはホーム画面一覧には記載がありませんが、ログイン処理を担当しています。)
-    
+
     <img src="./buildAppImg/ホーム画面.jpg" width="380px"> <img src="./buildAppImg/directory.jpg" width="380px">
+
     
-    
-    
+
     また、URLアドレスもソースコードが配置されているディレクトリと対応関係があります。下図はTemplete Methodのウェブページとソースコードの配置場所との対応を示したものです。
-    
+
     <img src="./buildAppImg/templateMethodOnWebBrowser.jpg" width="600px">
-    
+
     <img src="./buildAppImg/templateMethodOnFileViewer.jpg" width="600px">
-    
+
     
 
 ### その他のディレクトリ・ファイルについて
