@@ -43,13 +43,13 @@ facadeとは"建物の正面"とか"窓口"といった意味です。役所の�
 
 #### 各ファイルの説明
 
-・index.html ‥ ログイン画面、IDとPasswordを入力するための画面。
-・login.php ‥ Facadeパターンの入り口に相当する部分、すごくシンプルな造りになっている。
-　└authManager.php ‥ ログインに関するごちゃごちゃとした処理をやるところ。
-　　├user.php ‥ ユーザ情報を取得するクラス、データベース未使用なので作りはすごく単純。
-　　├hash.php ‥ パスワードをハッシュ化するための機能を持つ。
-　　└session.php ‥ cookieにログイン中であるというフラグを持たせる。
-・logout.php ‥ ついでに作ったログアウト処理、cookieッキーの情報を消す。
+・index.html ‥ ログイン画面、IDとPasswordを入力するための画面。<br>
+・login.php ‥ Facadeパターンの入り口に相当する部分、すごくシンプルな造りになっている。<br>
+　└authManager.php ‥ ログインに関するごちゃごちゃとした処理をやるところ。<br>
+　　├user.php ‥ ユーザ情報を取得するクラス、データベース未使用なので作りはすごく単純。<br>
+　　├hash.php ‥ パスワードをハッシュ化するための機能を持つ。<br>
+　　└session.php ‥ cookieにログイン中であるというフラグを持たせる。<br>
+・logout.php ‥ ついでに作ったログアウト処理、cookieッキーの情報を消す。<br>
 
 
 
@@ -67,10 +67,10 @@ Templateとはいわゆる"テンプレ"ですね、日本語では"鋳型"で�
 
 #### 各ファイルの説明
 
-・index.php ‥ テンプレートメソッドパターンを利用して本情報を画面上に表示する。
-　└abstractDisplay.php ‥ 画面表示機能を扱う抽象クラス。
-　　├tableDisplay.php ‥ テーブル形式で本の情報を表示する。
-　　└listDisplay.php ‥ リスト形式で本の情報を表示する。
+・index.php ‥ テンプレートメソッドパターンを利用して本情報を画面上に表示する。<br>
+　└abstractDisplay.php ‥ 画面表示機能を扱う抽象クラス。<br>
+　　├tableDisplay.php ‥ テーブル形式で本の情報を表示する。<br>
+　　└listDisplay.php ‥ リスト形式で本の情報を表示する。<br>
 
 
 
@@ -86,11 +86,11 @@ Factoryとは工場のことですね。当アプリケーションではファ�
 
 #### 各ファイルの説明
 
-・index.php ‥ 読み込んだファイルを表示する。
-　└factory.php ‥ 読み取り機を製造する工場のようなもの。
-　　└readerInterface.php ‥ 読み取り機のインターフェースクラス。
-　　　├csvReader.php ‥ CSV形式のファイルを読み込む読み取り機。
-　　　└jsonReader.php ‥ JSON形式のファイルを読み込む読み取り機。
+・index.php ‥ 読み込んだファイルを表示する。<br>
+　└factory.php ‥ 読み取り機を製造する工場のようなもの。<br>
+　　└readerInterface.php ‥ 読み取り機のインターフェースクラス。<br>
+　　　├csvReader.php ‥ CSV形式のファイルを読み込む読み取り機。<br>
+　　　└jsonReader.php ‥ JSON形式のファイルを読み込む読み取り機。<br>
 
 
 
@@ -104,10 +104,10 @@ Iteratorとは"反復子"という意味なのですが、要は"繰り返すも
 
 #### 各ファイルの説明
 
-・index.php ‥ イテレータパターンを利用して商品データを一覧で表示する。
-　├book.php ‥ 商品(本)を表すクラスです。※別ファイルの「_common/book.php」にあります
-　├bookIterator.php ‥ 商品(本)のリストを表すクラス。
-　└priceIterator.php ‥ 一定価格以上の商品(本)のリストを表すクラス。フィルターとしての機能する。
+・index.php ‥ イテレータパターンを利用して商品データを一覧で表示する。<br>
+　├book.php ‥ 商品(本)を表すクラスです。※別ファイルの「_common/book.php」にあります<br>
+　├bookIterator.php ‥ 商品(本)のリストを表すクラス。<br>
+　└priceIterator.php ‥ 一定価格以上の商品(本)のリストを表すクラス。フィルターとしての機能する。<br>
 
 
 
@@ -149,10 +149,10 @@ C:\xampp\htdocs\objectOriented
 
 #### 各ファイルの説明
 
-・index.php ‥ コンポジットパターンを利用して商品データをツリー構造で表示する。
-　└abstractComponent.php ‥ これを継承して枝と葉を作るから、枝葉を同一視することができる。
-　　├composite.php ‥ 木構造の"枝"に相当するクラス。
-　　└leaf.php ‥ 木構造の"葉"に位置する葉に相当するクラス
+・index.php ‥ コンポジットパターンを利用して商品データをツリー構造で表示する。<br>
+　└abstractComponent.php ‥ これを継承して枝と葉を作るから、枝葉を同一視することができる。<br>
+　　├composite.php ‥ 木構造の"枝"に相当するクラス。<br>
+　　└leaf.php ‥ 木構造の"葉"に位置する葉に相当するクラス<br>
 
 
 
@@ -178,11 +178,11 @@ Strategyとは"戦略"とか”計略”といった意味を持ちます。戦�
 
 #### 各ファイルの説明
 
-・index.php ‥ 各戦略の実行結果に基づき、オススメ欄に特定のメッセージを提示する。
-　└context.php[^1] ‥ 状況により切り替えられた戦略を利用する。
-　　└abstractStrategy.php ‥ 戦略の抽象クラス。
-　　　├releaseMonthStrategy.php ‥ 商品(本)の発売月に基づいた販売戦略。
-　　　└bookNameStrategy.php ‥ 商品(本)の名前に基づいた販売戦略。
+・index.php ‥ 各戦略の実行結果に基づき、オススメ欄に特定のメッセージを提示する。<br>
+　└context.php[^1] ‥ 状況により切り替えられた戦略を利用する。<br>
+　　└abstractStrategy.php ‥ 戦略の抽象クラス。<br>
+　　　├releaseMonthStrategy.php ‥ 商品(本)の発売月に基づいた販売戦略。<br>
+　　　└bookNameStrategy.php ‥ 商品(本)の名前に基づいた販売戦略。<br>
 
 [^1]:Conxtexとは直訳すると「文脈」とか「環境」という意味ですが、プログラムにおいては**状況判断**とか**条件分岐時における判断材料**とか**前提条件**とか**背後関係**とか、そのようなニュアンスになります。
 
@@ -206,12 +206,12 @@ Bridgeは"橋"です。"機能"と"実装"を分離する形でコーディン�
 
 #### 各ファイルの説明
 
-・index.php ‥ ブリッジターンを利用して商品データをソート表示する。
-　├sorter.php ‥ ソート機能の実装クラス、実際のソート時に利用するクラス。
-　│ └sortTimer.php ‥  sorter.phpを継承したクラス。ソートに要した時間を計測する。
-　└sortInterface.php ‥ ソート機能(アルゴリズム)のインターフェイス。
-　　├bubbleSort.php ‥ バブルソートの機能(アルゴリズム)。
-　　└countingSort.php ‥ カウンティングソートの機能(アルゴリズム)。
+・index.php ‥ ブリッジターンを利用して商品データをソート表示する。<br>
+　├sorter.php ‥ ソート機能の実装クラス、実際のソート時に利用するクラス。<br>
+　│ └sortTimer.php ‥  sorter.phpを継承したクラス。ソートに要した時間を計測する。<br>
+　└sortInterface.php ‥ ソート機能(アルゴリズム)のインターフェイス。<br>
+　　├bubbleSort.php ‥ バブルソートの機能(アルゴリズム)。<br>
+　　└countingSort.php ‥ カウンティングソートの機能(アルゴリズム)。<br>
 
 
 
@@ -227,11 +227,11 @@ Observerは"観察者"という意味です。当アプリケーションは本�
 
 #### 各ファイルの説明
 
-・index.php ‥ 買い物かごとしての機能をユーザに提供する。
-　└shoppingBasket.php ‥ 観測される対象の買い物かご、中に購入する商品を入れる。
-　　└cartListenerInterface.php ‥ 観測者のインターフェイス。
-　　　├loggingListener.php ‥ 買い物かごの変化を検知し、その中身を画面上に表示する。
-　　　└deliveryCostListener.php ‥ 買い物かごの変化を検知し、合計金額によっては配送料を課金する。
+・index.php ‥ 買い物かごとしての機能をユーザに提供する。<br>
+　└shoppingBasket.php ‥ 観測される対象の買い物かご、中に購入する商品を入れる。<br>
+　　└cartListenerInterface.php ‥ 観測者のインターフェイス。<br>
+　　　├loggingListener.php ‥ 買い物かごの変化を検知し、その中身を画面上に表示する。<br>
+　　　└deliveryCostListener.php ‥ 買い物かごの変化を検知し、合計金額によっては配送料を課金する。<br>
 
 
 
@@ -251,13 +251,13 @@ Observerは"観察者"という意味です。当アプリケーションは本�
 
 #### 各ファイルの説明
 
-・index.php ‥ 買い物かごの中の商品をオプションで包装する機能をユーザに提供する。
-・packInterface.php ‥ 包装のオプションについてのインターフェイス。
-　├plainPack.php ‥ 包装のオプションを適用する前の箱を表現するクラス。
-　└abstractPackDecorator.php ‥ 包装のオプションを扱う抽象クラス。
-　　├largePack.php ‥ 箱のサイズを大きくする。
-　　├cyanPack.ph ‥ 水色の紙で包装する。
-　　└hardPack.php ‥ 固い外箱に入れる。
+・index.php ‥ 買い物かごの中の商品をオプションで包装する機能をユーザに提供する。<br>
+・packInterface.php ‥ 包装のオプションについてのインターフェイス。<br>
+　├plainPack.php ‥ 包装のオプションを適用する前の箱を表現するクラス。<br>
+　└abstractPackDecorator.php ‥ 包装のオプションを扱う抽象クラス。<br>
+　　├largePack.php ‥ 箱のサイズを大きくする。<br>
+　　├cyanPack.ph ‥ 水色の紙で包装する。<br>
+　　└hardPack.php ‥ 固い外箱に入れる。<br>
 
 
 
@@ -281,9 +281,9 @@ Singletonとは、トランプの持ち札で組札ができない孤立した�
 
 #### 各ファイルの説明
 
-・index.php ‥ 商品の購入時に購入履歴を残す機能を提供する。
-　├logger.php ‥ 購入履歴をファイルに書き出す。（Singletonとして実装）
-　└log ‥ 購入履歴を記したファイルのの出力先フォルダ。
+・index.php ‥ 商品の購入時に購入履歴を残す機能を提供する。<br>
+　├logger.php ‥ 購入履歴をファイルに書き出す。（Singletonとして実装）<br>
+　└log ‥ 購入履歴を記したファイルのの出力先フォルダ。<br>
 
 
 
