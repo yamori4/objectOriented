@@ -114,7 +114,7 @@ Apache、MariaDB、PHP、Perlといったフリーのソフトウェアをパッ
 
    
 
-4. 実際にApacheが稼働していることを確認してみましょう。任意のウェブブラウザを起動してください、ここではChromeを使用しています。アドレスバーに「http://localhost」もしくは「http://127.0.0.1」と入力してみてください。以下の画面（ダッシュボード）が表示されるはずです。
+4. 実際にApacheが稼働していることを確認してみましょう。任意のウェブブラウザを起動してください、ここではChromeを使用しています。アドレスバーに「 http://localhost 」もしくは「 http://127.0.0.1 」と入力してみてください。以下の画面（ダッシュボード）が表示されるはずです。
 
    ![alt](./installXamppImg/dashboard.jpg)
 
@@ -147,7 +147,7 @@ Apache、MariaDB、PHP、Perlといったフリーのソフトウェアをパッ
 
    
 
-4. ウェブブラウザを起動し、アドレスバーに「http://localhost/helloworld.php」もしくは「http://127.0.0.1/helloworld.php」と入力してみてください。以下の画面のように先程プログラムで書いた文字列が表示されるはずです。（※事前にApacheを起動しておく必要があります。）
+4. ウェブブラウザを起動し、アドレスバーに「 http://localhost/helloworld.php 」もしくは「 http://127.0.0.1/helloworld.php 」と入力してみてください。以下の画面のように先程プログラムで書いた文字列が表示されるはずです。（※事前にApacheを起動しておく必要があります。）
 
    ![alt](./installXamppImg/helloOnWbBrowser.jpg)
 

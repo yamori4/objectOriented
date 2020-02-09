@@ -46,7 +46,7 @@
 
    ![alt](./buildAppImg/wakeupApache.jpg)
 
-8. 任意のウェブブラウザを起動してください、ここではChromeを使用しています。アドレスバーに「https://localhost/objectOriented/index.php」もしくは「https://127.0.0.1/objectOriented/index.php」と入力してみてください。以下の画面が表示されます。XAMPPできちんとした設定をすればエラーは出なくなりますが、今回は接続先が自分のPC(localhost)であることをしっかりと確認したうえで接続します。Chromeの場合だと「詳細設定」ボタンをクリックしてから、「localhostにアクセスする」をクリックしてください。もしくは"https"ではなく"http"で接続しても構いません。
+8. 任意のウェブブラウザを起動してください、ここではChromeを使用しています。アドレスバーに「 https://localhost/objectOriented/index.php 」もしくは「 https://127.0.0.1/objectOriented/index.php 」と入力してみてください。以下の画面が表示されます。XAMPPできちんとした設定をすればエラーは出なくなりますが、今回は接続先が自分のPC(localhost)であることをしっかりと確認したうえで接続します。Chromeの場合だと「詳細設定」ボタンをクリックしてから、「localhostにアクセスする」をクリックしてください。もしくは"https"ではなく"http"で接続しても構いません。
 
    <img src="./buildAppImg/privacyError.jpg" width="380px"> <img src="./buildAppImg/accessLocalhost.jpg" width="380px">
 
